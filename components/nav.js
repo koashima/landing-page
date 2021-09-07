@@ -6,6 +6,7 @@ import {
   Button,
   Stack,
   Collapse,
+  Spacer,
   Icon,
   Link,
   Popover,
@@ -22,6 +23,9 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+
+import Image from "next/image";
+import Logo from "/public/MKS-LOGO-PRINT.png";
 
 export default function Nav() {
   const { isOpen, onToggle } = useDisclosure();
@@ -53,19 +57,19 @@ export default function Nav() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
-
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
-          </Flex>
+        <Flex justify={{ base: "center" }}>
+          <Image src={Logo} width={93.75} height={116.875} />
         </Flex>
+        <Spacer display={{ base: "none", md: "flex" }} />
+        <Flex
+          display={{ base: "none", md: "flex" }}
+          direction={"column"}
+          justify={"center"}
+          ml={10}
+        >
+          <DesktopNav />
+        </Flex>
+        <Spacer display={{ base: "none", md: "flex" }} />
 
         <Stack
           flex={{ base: 1, md: 0 }}
@@ -251,37 +255,19 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "FAITH",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
-      },
-    ],
+    label: "MISSION",
+    href: "#",
   },
   {
     label: "ACADEMICS",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
+    href: "#",
   },
   {
     label: "COMMUNITY",
+    href: "#",
+  },
+  {
+    label: "ATHLETICS",
     href: "#",
   },
   {

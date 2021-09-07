@@ -12,9 +12,7 @@ export default function Faith() {
     <Flex
       w={"full"}
       h={"100vh"}
-      backgroundImage={
-        "url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)"
-      }
+      backgroundImage={"url(/faith.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
     >
@@ -31,8 +29,16 @@ export default function Faith() {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-            eiusmod tempor
+            Rooted in the Catholic faith, Maryknoll School is a nurturing and
+            welcoming community that values academic excellence, lifelong
+            learning, service to others, and the courage to imitate Jesus by
+            word and example. Hawaii’s largest coed K-12 Catholic school,
+            Maryknoll School has thrived because it has grown and innovated
+            while staying true to our founding values and traditions. Our
+            philosophy of education cultivates self-discipline, creativity, and
+            spiritual and physical growth. We serve to go beyond academics by
+            developing individuals of moral integrity and personal
+            responsibility. “Serving Hawaii’s Keiki since 1927”
           </Text>
           <Stack direction={"row"}>
             <Button
