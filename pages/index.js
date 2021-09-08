@@ -1,12 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
+import styles from "../styles/Home.module.css";
+
 import Nav from "../components/nav";
 import Future from "../sections/future";
 import Mission from "../sections/mission";
 import Academics from "../sections/academics";
 import Community from "../sections/community";
-import styles from "../styles/Home.module.css";
-
+import Athletics from "../sections/athletics";
 export default function Home() {
   return (
     <div>
@@ -22,7 +22,7 @@ export default function Home() {
         <Mission />
         <Academics />
         <Community />
-
+        <Athletics />
       </main>
 
       <footer className={styles.footer}>

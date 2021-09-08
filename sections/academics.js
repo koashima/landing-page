@@ -1,59 +1,62 @@
 import {
   Stack,
   Flex,
-  Button,
   Text,
   VStack,
+  Image,
   useBreakpointValue,
 } from "@chakra-ui/react";
 
 export default function Academics() {
   return (
-      
-    <Flex
-      w={"full"}
-      h={"100vh"}
-      backgroundImage={"url(/academics.jpg)"}
-      backgroundSize={"cover"}
-      backgroundPosition={"center center"}
-    >
+    <Flex w={"full"} h={"100vh"} direction="column">
+      <Stack
+        // maxW={"2xl"}
+
+        spacing={6}
+        backgroundImage={"url(/academics.png)"}
+        backgroundSize={"cover"}
+        backgroundPosition={"center "}
+      >
+        <Text
+          paddingTop="200"
+          color={"#551a29"}
+          fontWeight={500}
+          textAlign="center"
+          fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
+        >
+          ACADEMIC CURRICULUM
+        </Text>
+      </Stack>
       <VStack
         w={"full"}
         justify={"center"}
         px={useBreakpointValue({ base: 4, md: 8 })}
-        bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
+        <Stack maxW={"2xl"} align={"flex-start"} spacing={6}></Stack>
         <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
           <Text
-            color={"white"}
+            color={"#551a29"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
+            fontSize={useBreakpointValue({ base: "l", md: "xl" })}
           >
-            Rooted in the Catholic faith, Maryknoll School is a nurturing and
-            welcoming community that values academic excellence, lifelong
-            learning, service to others, and the courage to imitate Jesus by
-            word and example. 
-            
+            We believe in empowering students to understand that they can learn,
+            even when it doesn’t come easy. Connecting students to discover
+            their interests, passion, and talents, in a real-world context,
+            develops the student holistically. Our Mandarin Immersion Program is
+            offered to students in grades Kindergarten through Fifth Grade and
+            complements our curriculum designed to stretch young minds. Faculty
+            in the middle school help students hone their talents. Participating
+            in a wide range of curricular and extracurricular activities, our
+            students develop an increased sense of independence and personal
+            responsibility and prepare for high school, college, and career. Our
+            academic program at the high school prepares students to use their
+            talents and abilities to make a positive impact in the world.
+            Students thrive through project- based learning, senior capstone
+            projects, and college prep classes in STEM, Medical Innovation,
+            Business Diplomacy, and Creative Arts & Expression.
           </Text>
-          <Stack direction={"row"}>
-            {/* <Button
-              bg={"blue.400"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "blue.500" }}
-            >
-              Show me more
-            </Button> */}
-            <Button
-              bg={"whiteAlpha.300"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "whiteAlpha.500" }}
-            >
-              Show me more
-            </Button>
-          </Stack>
         </Stack>
       </VStack>
     </Flex>

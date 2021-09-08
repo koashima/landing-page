@@ -15,7 +15,7 @@ export default function Future() {
       h={"100vh"}
       backgroundImage={"url(/cover.jpg)"}
       backgroundSize={"cover"}
-      backgroundPosition={"center center"}
+      backgroundPosition={useBreakpointValue({ base: "65%", md: "center" })}
       direction={"column"}
       justify={"flex-end"}
     >
