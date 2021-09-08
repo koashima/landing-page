@@ -25,7 +25,7 @@ import {
 } from "@chakra-ui/icons";
 
 import Image from "next/image";
-import Logo from "/public/MKS-LOGO-PRINT.png";
+import Logo from "/public/logo.png";
 
 export default function Nav() {
   const { isOpen, onToggle } = useDisclosure();
@@ -281,5 +281,6 @@ const styles = {
     position: "-webkit-sticky",
     position: "sticky",
     top: "0",
+
   },
 };
