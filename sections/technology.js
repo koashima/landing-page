@@ -28,7 +28,7 @@ export default function Technology() {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
-FACILITIES & TECHNOLOGY
+            FACILITIES & TECHNOLOGY
           </Text>
           <Text
             color={"#551a29"}
@@ -41,24 +41,6 @@ FACILITIES & TECHNOLOGY
             learning, service to others, and the courage to imitate Jesus by
             word and example.
           </Text>
-          <Stack direction={"row"}>
-            {/* <Button
-              bg={"blue.400"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "blue.500" }}
-            >
-              Show me more
-            </Button> */}
-            {/* <Button
-              bg={"whiteAlpha.300"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "whiteAlpha.500" }}
-            >
-              Show me more
-            </Button> */}
-          </Stack>
         </Stack>
       </VStack>
     </Flex>
