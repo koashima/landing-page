@@ -1,59 +1,80 @@
 import {
   Stack,
   Flex,
-  Button,
   Text,
+  Image,
+  Spacer,
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-export default function Future() {
+export default function Faith() {
   return (
-      
     <Flex
       w={"full"}
       h={"100vh"}
       backgroundImage={"url(/athletics.jpg)"}
+      backgroundPosition={useBreakpointValue({
+        base: "35%",
+        md: "center top",
+        lg: "80% 25%",
+      })}
       backgroundSize={"cover"}
-      backgroundPosition={"center center"}
     >
       <VStack
         w={"full"}
-        justify={"center"}
+        justify={{ base: "space-evenly", md: "space-evenly" }}
         px={useBreakpointValue({ base: 4, md: 8 })}
-        bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
-        <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
+        <Stack align={"center"} spacing={6}>
+          <Text
+            color={"gold"}
+            fontWeight={500}
+            lineHeight={1.2}
+            textAlign="center"
+            fontSize={useBreakpointValue({ base: "xl", sm: "2xl", md: "4xl" })}
+          >
+            ATHLETICS & EXTRACURRICULAR ACTIVITIES
+          </Text>
+        </Stack>
+        <Stack maxW={"2xl"} align={"center"} spacing={6}>
           <Text
             color={"white"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
+            fontSize={useBreakpointValue({
+              base: "l",
+              sm: "xl",
+              md: "2xl",
+              lg: "3xl",
+            })}
+            align={"center"}
           >
-            Rooted in the Catholic faith, Maryknoll School is a nurturing and
-            welcoming community that values academic excellence, lifelong
-            learning, service to others, and the courage to imitate Jesus by
-            word and example. 
-            
+            At Maryknoll we want our scholar-athletes to demonstrate a
+            willingness to accept responsibility for their actions, measure
+            themselves against standards of quality, express ideas and solutions
+            to problems, and value fair play, honesty, humility, and teamwork.
           </Text>
-          <Stack direction={"row"}>
-            {/* <Button
-              bg={"blue.400"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "blue.500" }}
-            >
-              Show me more
-            </Button> */}
-            <Button
-              bg={"whiteAlpha.300"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "whiteAlpha.500" }}
-            >
-              Show me more
-            </Button>
-          </Stack>
+
+          <Text
+            color={"white"}
+            fontWeight={500}
+            lineHeight={1.2}
+            fontSize={useBreakpointValue({
+              base: "l",
+              sm: "xl",
+              md: "2xl",
+              lg: "3xl",
+            })}
+            align={"center"}
+          >
+            Maryknoll’s wide array of student clubs and organizations give
+            students a world of possibilities to discover and excel in their
+            special interests. Families are invited to have their children
+            participate in programs year-round, including after school care,
+            enrichment activities, and summer programs that complement
+            Maryknoll’s curriculum.
+          </Text>
         </Stack>
       </VStack>
     </Flex>

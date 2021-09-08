@@ -7,6 +7,7 @@ import Mission from "../sections/mission";
 import Academics from "../sections/academics";
 import Community from "../sections/community";
 import Athletics from "../sections/athletics";
+import Technology from "../sections/technology";
 export default function Home() {
   return (
     <div>
@@ -23,6 +24,7 @@ export default function Home() {
         <Academics />
         <Community />
         <Athletics />
+        <Technology />
       </main>
 
       <footer className={styles.footer}>
