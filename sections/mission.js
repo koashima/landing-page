@@ -22,12 +22,12 @@ export default function Faith() {
         justify={{ base: "space-around", md: "space-around" }}
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
-        <Stack maxW={"2xl"} align={"center"} spacing={6}>
+        <Stack maxW={"2xl"} align={"center"} >
           <Text
             color={"gold"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "xl", md: "4xl" })}
+            fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
           >
             OUR MISSION & PHILOSOPHY
           </Text>
@@ -37,7 +37,7 @@ export default function Faith() {
             color={"white"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "l", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "l", sm: "xl", md: "2xl" })}
             align={"center"}
           >
             Rooted in the Catholic faith, Maryknoll School is a nurturing and
@@ -49,7 +49,7 @@ export default function Faith() {
             color={"white"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "l", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "l", sm: "xl", md: "2xl" })}
             align={"center"}
           >
             Hawaii’s largest coed K-12 Catholic school, Maryknoll School has
@@ -63,22 +63,19 @@ export default function Faith() {
             color={"white"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "l", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "l", sm: "xl", md: "2xl" })}
             align={"center"}
           >
             “Serving Hawaii’s Keiki since 1927”
           </Text>
         </Stack>
-        {/* <Spacer /> */ }
         <Image
           src={"/cross.png"}
           layout={`fixed`}
           quality={"100"}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
-          // height={"248px"}{useBreakpointValue({ base: "l", md: "2xl" })}
         />
-        =
       </VStack>
     </Flex>
   );
