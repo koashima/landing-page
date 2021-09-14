@@ -4,6 +4,7 @@ import Future from "../sections/future";
 import Mission from "../sections/mission";
 import Academics from "../sections/academics";
 import Community from "../sections/community";
+import Numbers from "../sections/numbers";
 import Athletics from "../sections/athletics";
 import Technology from "../sections/technology";
 
@@ -16,17 +17,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Nav />
       <main>
+        <Nav />
         <Future />
         <Mission />
         <Academics />
         <Community />
+        <Numbers />
         <Athletics />
         <Technology />
       </main>
 
-      <footer>
+      {/* <footer>
         <div>
           made with love by
           <a
@@ -38,7 +40,7 @@ export default function Home() {
             lifted
           </a>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

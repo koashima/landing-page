@@ -70,7 +70,6 @@ export default function Faith() {
           <Text
             color={"white"}
             fontWeight={500}
-            lineHeight={1.2}
             fontSize={useBreakpointValue({
               base: "l",
               md: "xl",

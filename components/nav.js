@@ -48,16 +48,19 @@ export default function Nav() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex
+        {/* <Flex
           justify={{ base: "center" }}
           display={{ base: "none", md: "block" }}
         >
           <Image src={Logo} width={93.75} height={116.875} />
-        </Flex>
-        <Flex display={{ base: "block", sm: "none" }}>
+        </Flex> */}
+        <Flex display={{ base: "block", md: "none" }}>
           <Button
             fontFamily={"heading"}
             color={"#BF1F4A"}
+            _hover={{
+              color: "#FFC726",
+            }}
             bg={"white"}
             aria-label="Apply Now"
             onClick={() =>
@@ -75,17 +78,13 @@ export default function Nav() {
           display={{ base: "none", md: "flex" }}
           direction={"column"}
           justify={"center"}
-          ml={10}
+          // ml={10}
         >
           <DesktopNav />
         </Flex>
-        <Spacer display={{ base: "none", md: "flex" }} />
-
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
+        <Flex
+          justify={{ base: "center" }}
+          display={{ base: "none", md: "block" }}
         >
           <Button
             display={{ base: "none", md: "inline-flex" }}
@@ -108,7 +107,8 @@ export default function Nav() {
           >
             APPLY NOW
           </Button>
-        </Stack>
+        </Flex>
+        <Spacer display={{ base: "none", md: "flex" }} />
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -183,6 +183,10 @@ const NAV_ITEMS = [
     path: "community",
   },
   {
+    label: "NUMBERS",
+    path: "numbers",
+  },
+  {
     label: "ATHLETICS",
     path: "athletics",
   },
@@ -211,3 +215,45 @@ const styles = {
     },
   },
 };
+
+{
+  /* <Flex display={{ base: "block", md: "none" }}>
+<Button
+  fontFamily={"heading"}
+  color={"#BF1F4A"}
+  _hover={{
+    color: "#FFC726",
+  }}
+  bg={"white"}
+  aria-label="Apply Now"
+  onClick={() =>
+    window.open(
+      "https://www.maryknollschool.org/admission/apply-now",
+      "_blank"
+    )
+  }
+>
+  APPLY NOW
+</Button>
+</Flex> */
+}
+
+{
+  /* <Stack
+flex={{ base: 1, md: 0 }}
+justify={"flex-end"}
+direction={"row"}
+spacing={6}
+>
+
+</Stack> */
+}
+
+// <Stack
+// flex={{ base: 1, md: 0 }}
+// justify={"flex-end"}
+// direction={"row"}
+// spacing={6}
+// >
+
+// </Stack>

@@ -4,6 +4,7 @@ import {
   Button,
   Image,
   Heading,
+  Spacer,
   Text,
   VStack,
   useBreakpointValue,
@@ -14,19 +15,17 @@ export default function Community() {
     <Flex id="community" w={"full"} h={"100%"}>
       <VStack
         w={"full"}
+        flexDirection={{ base: "row-reverse", sm: "row" }}
         justify={"center"}
-        // px={useBreakpointValue({ base: 4, md: 8 })}
-      >
-        <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
-          <Image src={"/okinagaboys.png"} objectFit="cover" />
-        </Stack>
-      </VStack>
-      <VStack
-        w={"full"}
-        justify={"center"}
+        align="flex-end"
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
-        <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
+        <Stack maxW={"2xl"} align={{ base: "flex-end" }} spacing={6}>
+          <Image src={"/okinagaboys.png"} objectFit="cover" />
+        </Stack>
+        <Spacer />
+
+        <Stack maxW={"2xl"} align={"flex-end"} spacing={6}>
           <Heading
             color={"#551a29"}
             fontWeight={500}
@@ -35,10 +34,10 @@ export default function Community() {
           >
             COMMUNITY/STUDENT BODY
           </Heading>
+          <Spacer />
           <Text
             color={"#551a29"}
             fontWeight={500}
-            // lineHeight={1.2}
             align="right"
             fontSize={useBreakpointValue({
               base: "l",
