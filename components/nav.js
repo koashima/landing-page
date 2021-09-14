@@ -98,7 +98,7 @@ const DesktopNav = () => {
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label} sx={styles.navLinks}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
-            <Link to={navItem.path} smooth={true} duration={1000}>
+            <Link to={navItem.path} offset={-130} smooth={true} duration={1000}>
               {navItem.label}
             </Link>
           </Popover>

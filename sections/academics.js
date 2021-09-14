@@ -10,9 +10,10 @@ import {
 
 export default function Academics() {
   return (
-    <Flex w={"100vw"} h={"100%"} direction="column" id={"academics"}>
+    <Flex w={"100vw"} h={"100%"} direction="column">
       <Stack
         // maxW={"2xl"}
+        zIndex={-1}
         h={"100vh"}
         justifyContent="center"
         alignItems="flex-start"
@@ -24,7 +25,7 @@ export default function Academics() {
       >
         {/* <Spacer /> */}
         <Heading
-          zIndex={-1}
+          id={"academics"}
           position="absolute"
           paddingTop="400"
           color={"#551a29"}

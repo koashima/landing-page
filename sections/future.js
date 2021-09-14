@@ -24,7 +24,7 @@ export default function Future() {
         justify={"center"}
         px={useBreakpointValue({ base: 4, md: 48 })}
       >
-        <Image id={"mission"} src={"/future1.svg"} objectFit="cover" />
+        <Image src={"/future1.svg"} objectFit="cover" />
 
         {/* <Stack maxW={"2xl"} align={"flex-end"} spacing={6}>
           <Stack direction={"row"}>
