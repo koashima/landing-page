@@ -26,7 +26,7 @@ export default function Faith() {
       >
         <Stack maxW={"2xl"} align={"center"}>
           <Heading
-            color={"gold"}
+            color={"#FFC726"}
             fontWeight={500}
             // mt={50}
             fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
@@ -34,11 +34,12 @@ export default function Faith() {
             OUR MISSION & PHILOSOPHY
           </Heading>
         </Stack>
+        <Spacer />
         <Stack maxW={"2xl"} align={"center"} spacing={6}>
           <Text
             color={"white"}
             fontWeight={500}
-            fontSize={useBreakpointValue({ base: "l", sm: "xl", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "l", sm: "xl"})}
             align={"center"}
           >
             Rooted in the Catholic faith, Maryknoll School is a nurturing and
@@ -50,7 +51,7 @@ export default function Faith() {
             color={"white"}
             fontWeight={500}
             // lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "l", sm: "xl", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "l", sm: "xl"})}
             align={"center"}
           >
             Hawaii’s largest coed K-12 Catholic school, Maryknoll School has
@@ -64,12 +65,13 @@ export default function Faith() {
             color={"white"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "l", sm: "xl", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "l", sm: "xl"})}
             align={"center"}
           >
             “Serving Hawaii’s Keiki since 1927”
           </Text>
         </Stack>
+        <Spacer />
         <Image
           src={"/cross.png"}
           layout={`fixed`}

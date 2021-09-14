@@ -11,12 +11,7 @@ import {
 
 export default function Community() {
   return (
-    <Flex
-      id="community"
-      w={"full"}
-      h={"100%"}
-
-    >
+    <Flex id="community" w={"full"} h={"100%"}>
       <VStack
         w={"full"}
         justify={"center"}
@@ -45,7 +40,7 @@ export default function Community() {
             fontWeight={500}
             // lineHeight={1.2}
             align="right"
-            fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "xl" })}
           >
             We serve to go beyond academics by developing individuals of moral
             integrity and personal responsibility. Our faculty provide genuine

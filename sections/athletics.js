@@ -14,7 +14,7 @@ export default function Athlectics() {
     <Flex
       id={"athletics"}
       w={"full"}
-      h={"100%"}
+      h={"100vh"}
       backgroundImage={"url(/athletics.jpg)"}
       backgroundPosition={useBreakpointValue({
         base: "35%",
@@ -30,7 +30,7 @@ export default function Athlectics() {
       >
         <Stack align={"center"} spacing={6}>
           <Heading
-            color={"gold"}
+            color={"#FFC726"}
             fontWeight={500}
             lineHeight={1.2}
             textAlign="center"
@@ -47,8 +47,6 @@ export default function Athlectics() {
             fontSize={useBreakpointValue({
               base: "l",
               sm: "xl",
-              md: "2xl",
-              lg: "3xl",
             })}
             align={"center"}
           >
@@ -65,8 +63,6 @@ export default function Athlectics() {
             fontSize={useBreakpointValue({
               base: "l",
               sm: "xl",
-              md: "2xl",
-              lg: "3xl",
             })}
             align={"center"}
           >

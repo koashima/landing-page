@@ -13,18 +13,19 @@ export default function Technology() {
     <Flex
       id="technology"
       w={"full"}
-      h={"100%"}
+      h={"100vh"}
       backgroundImage={"url(/facilities.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
     >
       <VStack
         w={"full"}
-        justify={"center"}
+        justify={"flex-start"}
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
           <Heading
+            mt={12}
             color={"#551a29"}
             fontWeight={500}
             lineHeight={1.2}
@@ -36,7 +37,7 @@ export default function Technology() {
             color={"#551a29"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "xl", })}
           >
             Rooted in the Catholic faith, Maryknoll School is a nurturing and
             welcoming community that values academic excellence, lifelong

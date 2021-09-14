@@ -7,7 +7,6 @@ import {
   Stack,
   Collapse,
   Spacer,
-  Popover,
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -49,8 +48,27 @@ export default function Nav() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex justify={{ base: "center" }}>
+        <Flex
+          justify={{ base: "center" }}
+          display={{ base: "none", md: "block" }}
+        >
           <Image src={Logo} width={93.75} height={116.875} />
+        </Flex>
+        <Flex display={{ base: "block", sm: "none" }}>
+          <Button
+            fontFamily={"heading"}
+            color={"#BF1F4A"}
+            bg={"white"}
+            aria-label="Apply Now"
+            onClick={() =>
+              window.open(
+                "https://www.maryknollschool.org/admission/apply-now",
+                "_blank"
+              )
+            }
+          >
+            APPLY NOW
+          </Button>
         </Flex>
         <Spacer display={{ base: "none", md: "flex" }} />
         <Flex
@@ -71,14 +89,22 @@ export default function Nav() {
         >
           <Button
             display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
+            fontSize={"xl"}
+            fontWeight={500}
+            p={2}
+            fontFamily={"heading"}
             color={"white"}
-            bg={"red.800"}
-            href={"#"}
+            bg={"#BF1F4A"}
+            aria-label="Apply Now"
             _hover={{
-              bg: "red.700",
+              color: "#FFC726",
             }}
+            onClick={() =>
+              window.open(
+                "https://www.maryknollschool.org/admission/apply-now",
+                "_blank"
+              )
+            }
           >
             APPLY NOW
           </Button>
@@ -97,11 +123,9 @@ const DesktopNav = () => {
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label} sx={styles.navLinks}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
-            <Link to={navItem.path} offset={-130} smooth={true} duration={1000}>
-              {navItem.label}
-            </Link>
-          </Popover>
+          <Link to={navItem.path} offset={-130} smooth={true} duration={1000}>
+            {navItem.label}
+          </Link>
         </Box>
       ))}
     </Stack>
@@ -111,7 +135,7 @@ const DesktopNav = () => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "gray.800")}
+      bg={useColorModeValue("rgba(255, 255, 255, 0.9)")}
       p={4}
       display={{ md: "none" }}
     >
@@ -126,26 +150,20 @@ const MobileNavItem = ({ path, label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Stack spacing={4} onClick={children && onToggle}>
+    <Stack sx={styles.navLinks} spacing={4} onClick={children && onToggle}>
       <Flex
         py={2}
         as={Link}
         to={path}
         smooth={true}
         duration={1000}
-        href={href ?? "#"}
         justify={"space-between"}
         align={"center"}
         _hover={{
           textDecoration: "none",
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
-          {label}
-        </Text>
+        <Text fontWeight={600}>{label}</Text>
       </Flex>
     </Stack>
   );
@@ -185,10 +203,10 @@ const styles = {
     fontFamily: "heading",
     fontSize: "xl",
     fontWeight: 500,
-    color: "#551a29",
+    color: "#BF1F4A",
     "&:hover": {
       textDecoration: "none",
-      color: "gray.800",
+      color: "#FFC726",
       cursor: "pointer",
     },
   },
