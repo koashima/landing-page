@@ -3,13 +3,13 @@ import {
   Flex,
   Text,
   VStack,
-  Image,
+  // Image,
   useBreakpointValue,
 } from "@chakra-ui/react";
 
 export default function Academics() {
   return (
-    <Flex w={"full"} h={"100vh"} direction="column">
+    <Flex w={"full"} h={"100vh"} direction="column" id={"academics"}>
       <Stack
         // maxW={"2xl"}
 

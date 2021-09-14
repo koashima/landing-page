@@ -9,8 +9,8 @@ import {
 
 export default function Community() {
   return (
-      
     <Flex
+      id="community"
       w={"full"}
       h={"100vh"}
       backgroundImage={"url(/Cover.jpg)"}
@@ -33,8 +33,7 @@ export default function Community() {
             Rooted in the Catholic faith, Maryknoll School is a nurturing and
             welcoming community that values academic excellence, lifelong
             learning, service to others, and the courage to imitate Jesus by
-            word and example. 
-            
+            word and example.
           </Text>
           <Stack direction={"row"}>
             {/* <Button

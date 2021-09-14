@@ -11,6 +11,7 @@ import {
 export default function Faith() {
   return (
     <Flex
+      id={"mission"}
       w={"full"}
       h={"100vh"}
       backgroundImage={"url(/faith.jpg)"}
@@ -22,11 +23,12 @@ export default function Faith() {
         justify={{ base: "space-around", md: "space-around" }}
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
-        <Stack maxW={"2xl"} align={"center"} >
+        <Stack maxW={"2xl"} align={"center"}>
           <Text
             color={"gold"}
             fontWeight={500}
             lineHeight={1.2}
+            mt={50}
             fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
           >
             OUR MISSION & PHILOSOPHY

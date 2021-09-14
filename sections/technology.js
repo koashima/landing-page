@@ -10,6 +10,7 @@ import {
 export default function Technology() {
   return (
     <Flex
+      id="technology"
       w={"full"}
       h={"100vh"}
       backgroundImage={"url(/facilities.jpg)"}

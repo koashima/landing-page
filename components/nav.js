@@ -8,14 +8,15 @@ import {
   Collapse,
   Spacer,
   Icon,
-  Link,
+  // Link,
   Popover,
   PopoverTrigger,
-  PopoverContent,
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
+
+import { Link } from "react-scroll";
 
 import {
   HamburgerIcon,
@@ -110,13 +111,15 @@ const DesktopNav = () => {
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
               <Link
                 p={2}
                 href={navItem.href ?? "#"}
                 fontSize={"sm"}
                 fontWeight={500}
                 color={linkColor}
+                to={navItem.path}
+                smooth={true}
+                duration={1000}
                 _hover={{
                   textDecoration: "none",
                   color: linkHoverColor,
@@ -124,65 +127,10 @@ const DesktopNav = () => {
               >
                 {navItem.label}
               </Link>
-            </PopoverTrigger>
-
-            {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={"xl"}
-                bg={popoverContentBgColor}
-                p={4}
-                rounded={"xl"}
-                minW={"sm"}
-              >
-                <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack>
-              </PopoverContent>
-            )}
           </Popover>
         </Box>
       ))}
     </Stack>
-  );
-};
-
-const DesktopSubNav = ({ label, href, subLabel }) => {
-  return (
-    <Link
-      href={href}
-      role={"group"}
-      display={"block"}
-      p={2}
-      rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
-    >
-      <Stack direction={"row"} align={"center"}>
-        <Box>
-          <Text
-            transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
-            fontWeight={500}
-          >
-            {label}
-          </Text>
-          <Text fontSize={"sm"}>{subLabel}</Text>
-        </Box>
-        <Flex
-          transition={"all .3s ease"}
-          transform={"translateX(-10px)"}
-          opacity={0}
-          _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
-          justify={"flex-end"}
-          align={"center"}
-          flex={1}
-        >
-          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
-        </Flex>
-      </Stack>
-    </Link>
   );
 };
 
@@ -200,7 +148,7 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, children, href }) => {
+const MobileNavItem = ({ path, label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -208,6 +156,9 @@ const MobileNavItem = ({ label, children, href }) => {
       <Flex
         py={2}
         as={Link}
+        to={path}
+        smooth={true}
+        duration={1000}
         href={href ?? "#"}
         justify={"space-between"}
         align={"center"}
@@ -221,7 +172,7 @@ const MobileNavItem = ({ label, children, href }) => {
         >
           {label}
         </Text>
-        {children && (
+        {/* {children && (
           <Icon
             as={ChevronDownIcon}
             transition={"all .25s ease-in-out"}
@@ -229,26 +180,8 @@ const MobileNavItem = ({ label, children, href }) => {
             w={6}
             h={6}
           />
-        )}
+        )} */}
       </Flex>
-
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
-          align={"start"}
-        >
-          {children &&
-            children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Link>
-            ))}
-        </Stack>
-      </Collapse>
     </Stack>
   );
 };
@@ -256,23 +189,23 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "MISSION",
-    href: "#",
+    path: "mission",
   },
   {
     label: "ACADEMICS",
-    href: "#",
+    path: "academics",
   },
   {
     label: "COMMUNITY",
-    href: "#",
+    path: "community",
   },
   {
     label: "ATHLETICS",
-    href: "#",
+    path: "athletics",
   },
   {
     label: "TECHNOLOGY",
-    href: "#",
+    path: "technology",
   },
 ];
 
@@ -281,6 +214,5 @@ const styles = {
     position: "-webkit-sticky",
     position: "sticky",
     top: "0",
-
   },
 };
