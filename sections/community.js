@@ -40,8 +40,10 @@ export default function Community() {
             fontWeight={500}
             // lineHeight={1.2}
             align="right"
-            fontSize={useBreakpointValue({ base: "xl" })}
-          >
+            fontSize={useBreakpointValue({
+              base: "l",
+              sm: "xl",
+            })}          >
             We serve to go beyond academics by developing individuals of moral
             integrity and personal responsibility. Our faculty provide genuine
             care and support, for both students and their parents, and serve as

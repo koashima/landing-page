@@ -39,7 +39,10 @@ export default function Faith() {
           <Text
             color={"white"}
             fontWeight={500}
-            fontSize={useBreakpointValue({ base: "l", sm: "xl"})}
+            fontSize={useBreakpointValue({
+              base: "l",
+              sm: "xl",
+            })}
             align={"center"}
           >
             Rooted in the Catholic faith, Maryknoll School is a nurturing and
@@ -51,7 +54,10 @@ export default function Faith() {
             color={"white"}
             fontWeight={500}
             // lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "l", sm: "xl"})}
+            fontSize={useBreakpointValue({
+              base: "l",
+              sm: "xl",
+            })}
             align={"center"}
           >
             Hawaii’s largest coed K-12 Catholic school, Maryknoll School has
@@ -65,7 +71,10 @@ export default function Faith() {
             color={"white"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "l", sm: "xl"})}
+            fontSize={useBreakpointValue({
+              base: "l",
+              sm: "xl",
+            })}
             align={"center"}
           >
             “Serving Hawaii’s Keiki since 1927”

@@ -37,12 +37,17 @@ export default function Technology() {
             color={"#551a29"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "xl", })}
+            fontSize={useBreakpointValue({ base: "xl" })}
           >
-            Rooted in the Catholic faith, Maryknoll School is a nurturing and
-            welcoming community that values academic excellence, lifelong
-            learning, service to others, and the courage to imitate Jesus by
-            word and example.
+            Maryknoll’s campuses include custom-designed 21st-century classrooms
+            with technology and furniture that fosters student collaboration.
+            From laptops to iPads, flight simulators to 3-D printers,
+            instructional space, and meeting spaces are all purposefully built
+            and renovated attentive to the needs of teaching and learning. The
+            Maryknoll Community Center which houses the Clarence T.C. Ching
+            Gymnasium serves the entire community well in the multitude of
+            year-round events it hosts. From athletic games to school masses and
+            assemblies, it is truly a hub of exciting activity.
           </Text>
         </Stack>
       </VStack>

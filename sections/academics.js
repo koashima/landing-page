@@ -71,8 +71,10 @@ export default function Academics() {
           <Text
             color={"#551a29"}
             fontWeight={500}
-            fontSize={useBreakpointValue({ base: "l", md: "xl" })}
-          >
+            fontSize={useBreakpointValue({
+              base: "l",
+              sm: "xl",
+            })}          >
             We believe in empowering students to understand that they can learn,
             even when it doesn’t come easy. Connecting students to discover
             their interests, passion, and talents, in a real-world context,
