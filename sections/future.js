@@ -1,8 +1,8 @@
 import {
-  Stack,
+  // Stack,
   Flex,
-  Button,
-  Text,
+  // Button,
+  // Text,
   Image,
   VStack,
   useBreakpointValue,

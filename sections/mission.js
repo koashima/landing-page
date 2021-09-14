@@ -2,6 +2,7 @@ import {
   Stack,
   Flex,
   Text,
+  Heading,
   Image,
   Spacer,
   VStack,
@@ -13,7 +14,7 @@ export default function Faith() {
     <Flex
       id={"mission"}
       w={"full"}
-      h={"100vh"}
+      h={"100%"}
       backgroundImage={"url(/faith.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
@@ -24,21 +25,19 @@ export default function Faith() {
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Stack maxW={"2xl"} align={"center"}>
-          <Text
+          <Heading
             color={"gold"}
             fontWeight={500}
-            lineHeight={1.2}
-            mt={50}
+            // mt={50}
             fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
           >
             OUR MISSION & PHILOSOPHY
-          </Text>
+          </Heading>
         </Stack>
         <Stack maxW={"2xl"} align={"center"} spacing={6}>
           <Text
             color={"white"}
             fontWeight={500}
-            lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "l", sm: "xl", md: "2xl" })}
             align={"center"}
           >
@@ -50,7 +49,7 @@ export default function Faith() {
           <Text
             color={"white"}
             fontWeight={500}
-            lineHeight={1.2}
+            // lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "l", sm: "xl", md: "2xl" })}
             align={"center"}
           >

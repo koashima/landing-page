@@ -4,6 +4,7 @@ import {
   Text,
   Image,
   Spacer,
+  Heading,
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
@@ -13,7 +14,7 @@ export default function Athlectics() {
     <Flex
       id={"athletics"}
       w={"full"}
-      h={"100vh"}
+      h={"100%"}
       backgroundImage={"url(/athletics.jpg)"}
       backgroundPosition={useBreakpointValue({
         base: "35%",
@@ -28,7 +29,7 @@ export default function Athlectics() {
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Stack align={"center"} spacing={6}>
-          <Text
+          <Heading
             color={"gold"}
             fontWeight={500}
             lineHeight={1.2}
@@ -36,7 +37,7 @@ export default function Athlectics() {
             fontSize={useBreakpointValue({ base: "xl", sm: "2xl", md: "4xl" })}
           >
             ATHLETICS & EXTRACURRICULAR ACTIVITIES
-          </Text>
+          </Heading>
         </Stack>
         <Stack maxW={"2xl"} align={"center"} spacing={6}>
           <Text

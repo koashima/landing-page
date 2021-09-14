@@ -2,6 +2,7 @@ import {
   Stack,
   Flex,
   Button,
+  Heading,
   Text,
   VStack,
   useBreakpointValue,
@@ -12,7 +13,7 @@ export default function Technology() {
     <Flex
       id="technology"
       w={"full"}
-      h={"100vh"}
+      h={"100%"}
       backgroundImage={"url(/facilities.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
@@ -23,14 +24,14 @@ export default function Technology() {
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
-          <Text
+          <Heading
             color={"#551a29"}
             fontWeight={500}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
             FACILITIES & TECHNOLOGY
-          </Text>
+          </Heading>
           <Text
             color={"#551a29"}
             fontWeight={500}

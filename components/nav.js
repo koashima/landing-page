@@ -18,12 +18,7 @@ import {
 
 import { Link } from "react-scroll";
 
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import Image from "next/image";
 import Logo from "/public/logo.png";
@@ -102,31 +97,14 @@ export default function Nav() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
-  const popoverContentBgColor = useColorModeValue("white", "gray.800");
-
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
+        <Box key={navItem.label} sx={styles.navLinks}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
-              <Link
-                p={2}
-                href={navItem.href ?? "#"}
-                fontSize={"sm"}
-                fontWeight={500}
-                color={linkColor}
-                to={navItem.path}
-                smooth={true}
-                duration={1000}
-                _hover={{
-                  textDecoration: "none",
-                  color: linkHoverColor,
-                }}
-              >
-                {navItem.label}
-              </Link>
+            <Link to={navItem.path} smooth={true} duration={1000}>
+              {navItem.label}
+            </Link>
           </Popover>
         </Box>
       ))}
@@ -172,15 +150,6 @@ const MobileNavItem = ({ path, label, children, href }) => {
         >
           {label}
         </Text>
-        {/* {children && (
-          <Icon
-            as={ChevronDownIcon}
-            transition={"all .25s ease-in-out"}
-            transform={isOpen ? "rotate(180deg)" : ""}
-            w={6}
-            h={6}
-          />
-        )} */}
       </Flex>
     </Stack>
   );
@@ -214,5 +183,17 @@ const styles = {
     position: "-webkit-sticky",
     position: "sticky",
     top: "0",
+  },
+  navLinks: {
+    p: 2,
+    fontFamily: "heading",
+    fontSize: "xl",
+    fontWeight: 500,
+    color: "#551a29",
+    "&:hover": {
+      textDecoration: "none",
+      color: "gray.800",
+      cursor: "pointer",
+    },
   },
 };
