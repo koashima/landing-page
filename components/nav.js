@@ -7,12 +7,8 @@ import {
   Stack,
   Collapse,
   Spacer,
-  Icon,
-  // Link,
   Popover,
-  PopoverTrigger,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
 
