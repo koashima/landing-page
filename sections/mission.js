@@ -82,7 +82,7 @@ export default function Faith() {
         </Stack>
         <Spacer />
         <Image
-          src={"/cross.png"}
+          src={"/catholic.svg"}
           layout={`fixed`}
           quality={"100"}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
