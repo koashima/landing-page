@@ -73,8 +73,8 @@ export default function Academics() {
             fontWeight={500}
             fontSize={useBreakpointValue({
               base: "l",
-              sm: "xl",
-            })}          >
+              md: "xl",
+            })}         >
             We believe in empowering students to understand that they can learn,
             even when it doesn’t come easy. Connecting students to discover
             their interests, passion, and talents, in a real-world context,

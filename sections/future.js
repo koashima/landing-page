@@ -23,19 +23,7 @@ export default function Future() {
         justify={"center"}
         px={useBreakpointValue({ base: 4, md: 24 })}
       >
-        <Image src={"/future1.svg"} objectFit="cover" mt='64' />
-        {/* <Stack maxW={"2xl"} align={"flex-end"} spacing={6}>
-          <Stack direction={"row"}>
-            <Button
-              bg={"whiteAlpha.300"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "whiteAlpha.500" }}
-            >
-              APPLY NOW
-            </Button>
-          </Stack>
-        </Stack> */}
+        <Image src={"/future1.svg"} objectFit="cover" mt="64" />
       </VStack>
     </Flex>
   );

@@ -42,8 +42,9 @@ export default function Community() {
             align="right"
             fontSize={useBreakpointValue({
               base: "l",
-              sm: "xl",
-            })}          >
+              md: "xl",
+            })}
+          >
             We serve to go beyond academics by developing individuals of moral
             integrity and personal responsibility. Our faculty provide genuine
             care and support, for both students and their parents, and serve as

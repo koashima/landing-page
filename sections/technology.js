@@ -37,7 +37,10 @@ export default function Technology() {
             color={"#551a29"}
             fontWeight={500}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "xl" })}
+            fontSize={useBreakpointValue({
+              base: "l",
+              md: "xl",
+            })}
           >
             Maryknoll’s campuses include custom-designed 21st-century classrooms
             with technology and furniture that fosters student collaboration.

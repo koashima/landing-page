@@ -41,7 +41,7 @@ export default function Faith() {
             fontWeight={500}
             fontSize={useBreakpointValue({
               base: "l",
-              sm: "xl",
+              md: "xl",
             })}
             align={"center"}
           >
@@ -56,7 +56,7 @@ export default function Faith() {
             // lineHeight={1.2}
             fontSize={useBreakpointValue({
               base: "l",
-              sm: "xl",
+              md: "xl",
             })}
             align={"center"}
           >
@@ -73,7 +73,7 @@ export default function Faith() {
             lineHeight={1.2}
             fontSize={useBreakpointValue({
               base: "l",
-              sm: "xl",
+              md: "xl",
             })}
             align={"center"}
           >

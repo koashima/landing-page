@@ -46,7 +46,7 @@ export default function Athlectics() {
             lineHeight={1.2}
             fontSize={useBreakpointValue({
               base: "l",
-              sm: "xl",
+              md: "xl",
             })}
             align={"center"}
           >
@@ -62,7 +62,7 @@ export default function Athlectics() {
             lineHeight={1.2}
             fontSize={useBreakpointValue({
               base: "l",
-              sm: "xl",
+              md: "xl",
             })}
             align={"center"}
           >
