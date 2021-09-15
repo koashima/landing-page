@@ -41,7 +41,7 @@ export default function Athlectics() {
         </Stack>
         <Stack maxW={"2xl"} align={"center"} spacing={6}>
           <Text
-            my={{ base: 25, sm: 36 }}
+            mt={{ base: 36, sm: 36 }}
             color={"white"}
             fontWeight={500}
             fontSize={useBreakpointValue({
@@ -57,7 +57,7 @@ export default function Athlectics() {
           </Text>
 
           <Text
-            my={25}
+            // my={25}
             color={"white"}
             fontWeight={500}
             fontSize={useBreakpointValue({
