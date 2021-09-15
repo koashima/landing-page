@@ -14,7 +14,7 @@ export default function Academics() {
       <Stack
         // maxW={"2xl"}
         zIndex={-1}
-        minHeight={"100vh"}
+        h={"100vh"}
         justifyContent="center"
         alignItems="flex-start"
         spacing={6}
@@ -23,7 +23,7 @@ export default function Academics() {
         backgroundPosition={"center"}
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
-        <Spacer />
+        {/* <Spacer /> */}
         <Heading
           id={"academics"}
           position="absolute"
@@ -36,15 +36,13 @@ export default function Academics() {
         >
           ACADEMIC CURRICULUM
         </Heading>
-        <Stack
-          maxW={"2xl"}
-          align={"flex-start"}
-          px={useBreakpointValue({ base: 4, md: 8 })}
-          spacing={6}
-          position="absolute"
-          pt={1500}
-          pb={200}
-        >
+      </Stack>
+      <VStack
+        w={"full"}
+        justify={"center"}
+        px={useBreakpointValue({ base: 4, md: 8 })}
+      >
+        <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
           <Text
             color={"#551a29"}
             fontWeight={500}
@@ -57,7 +55,7 @@ export default function Academics() {
             even when it doesn’t come easy. Connecting students to discover
             their interests, passion, and talents, in a real-world context,
             develops the student holistically.
-          </Text>
+          </Text>{" "}
           <Text
             color={"#551a29"}
             fontWeight={500}
@@ -69,7 +67,7 @@ export default function Academics() {
             Our Mandarin Immersion Program is offered to students in grades
             Kindergarten through Fifth Grade and complements our curriculum
             designed to stretch young minds.
-          </Text>
+          </Text>{" "}
           <Text
             color={"#551a29"}
             fontWeight={500}
@@ -100,14 +98,7 @@ export default function Academics() {
           </Text>
           <Spacer />
         </Stack>
-        <Spacer minHeight="1200px"/>
-      </Stack>
-      <VStack
-        w={"full"}
-        h={400}
-        justify={"center"}
-        px={useBreakpointValue({ base: 4, md: 8 })}
-      ></VStack>
+      </VStack>
     </Flex>
   );
 }

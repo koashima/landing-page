@@ -14,7 +14,7 @@ export default function Faith() {
   return (
     <Flex
       id={"numbers"}
-      h={"100vh"}
+      mh={"100vh"}
       direction="column"
       align="center"
       justify="center"
@@ -26,7 +26,7 @@ export default function Faith() {
         <Heading
           color={"white"}
           fontWeight={500}
-          mt={50}
+          m={50}
           fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
         >
           BY THE NUMBERS
@@ -77,6 +77,8 @@ export default function Faith() {
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
       </HStack>
+      <Spacer minHeight="50px"/>
+
     </Flex>
   );
 }

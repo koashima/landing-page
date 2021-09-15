@@ -14,23 +14,23 @@ export default function Community() {
   return (
     <Flex id="community" w={"full"} h={"100%"}>
       <VStack
-        w={"full"}
-        flexDirection={{ base: "row-reverse", sm: "row" }}
+        w={"100vw"}
+        flexDirection={{ base: "column-reverse", md: "row" }}
         justify={"center"}
         align="flex-end"
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Stack maxW={"2xl"} align={{ base: "flex-end" }} spacing={6}>
-          <Image src={"/okinagaboys.png"} objectFit="cover" />
+          <Image src={"/okinagaboys.png"} objectFit="cover" minHeight={500} />
         </Stack>
         <Spacer />
 
-        <Stack maxW={"2xl"} align={"flex-end"} spacing={6}>
+        <Stack maxW={"2xl"} align={{base: 'center', sm: "flex-end"}} spacing={6}>
           <Heading
+            my={50}
             color={"#551a29"}
             fontWeight={500}
-            lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
+            fontSize={useBreakpointValue({ base: "xl", sm: "2xl", md: "4xl" })}
           >
             COMMUNITY/STUDENT BODY
           </Heading>
@@ -56,6 +56,7 @@ export default function Community() {
             life changes, they are equipped with the skills to navigate and
             contribute to society.
           </Text>
+      <Spacer minHeight="50px" />
         </Stack>
       </VStack>
     </Flex>

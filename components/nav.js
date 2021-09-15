@@ -15,8 +15,8 @@ import { Link } from "react-scroll";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-import Image from "next/image";
-import Logo from "/public/logo.png";
+// import Image from "next/image";
+// import Logo from "/public/logo.png";
 
 export default function Nav() {
   const { isOpen, onToggle } = useDisclosure();
@@ -82,7 +82,7 @@ export default function Nav() {
         >
           <DesktopNav />
         </Flex>
-        <Flex
+        {/* <Flex
           justify={{ base: "center" }}
           display={{ base: "none", md: "block" }}
         >
@@ -92,8 +92,8 @@ export default function Nav() {
             fontWeight={500}
             p={2}
             fontFamily={"heading"}
-            color={"white"}
-            bg={"#BF1F4A"}
+            color={"#BF1F4A"}
+            bg={"white"}
             aria-label="Apply Now"
             _hover={{
               color: "#FFC726",
@@ -107,7 +107,7 @@ export default function Nav() {
           >
             APPLY NOW
           </Button>
-        </Flex>
+        </Flex> */}
         <Spacer display={{ base: "none", md: "flex" }} />
       </Flex>
 
@@ -128,6 +128,23 @@ const DesktopNav = () => {
           </Link>
         </Box>
       ))}
+      <Box sx={styles.navLinks}>
+        <Link
+          style={{}}
+          aria-label="Apply Now"
+          _hover={{
+            color: "#FFC726",
+          }}
+          onClick={() =>
+            window.open(
+              "https://www.maryknollschool.org/admission/apply-now",
+              "_blank"
+            )
+          }
+        >
+          APPLY NOW
+        </Link>
+      </Box>
     </Stack>
   );
 };

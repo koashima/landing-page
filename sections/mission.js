@@ -26,9 +26,9 @@ export default function Faith() {
       >
         <Stack maxW={"2xl"} align={"center"}>
           <Heading
+            m={50}
             color={"#FFC726"}
             fontWeight={500}
-            // mt={50}
             fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
           >
             OUR MISSION & PHILOSOPHY
@@ -87,6 +87,7 @@ export default function Faith() {
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
+        <Spacer minHeight="50px" />
       </VStack>
     </Flex>
   );
