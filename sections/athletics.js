@@ -25,21 +25,23 @@ export default function Athlectics() {
     >
       <VStack
         w={"full"}
-        justify={{ base: "center", md: "space-around" }}
+        justify={{ base: "flex-start" }}
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Stack align={"center"} spacing={6}>
           <Heading
+            my={50}
             color={"#FFC726"}
             fontWeight={500}
             textAlign="center"
             fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
-            >
+          >
             ATHLETICS & EXTRACURRICULAR ACTIVITIES
           </Heading>
         </Stack>
         <Stack maxW={"2xl"} align={"center"} spacing={6}>
           <Text
+            my={{ base: 25, sm: 36 }}
             color={"white"}
             fontWeight={500}
             fontSize={useBreakpointValue({
@@ -55,6 +57,7 @@ export default function Athlectics() {
           </Text>
 
           <Text
+            my={25}
             color={"white"}
             fontWeight={500}
             fontSize={useBreakpointValue({
