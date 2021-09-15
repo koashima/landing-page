@@ -54,10 +54,15 @@ export default function Nav() {
         >
           <Image src={Logo} width={93.75} height={116.875} />
         </Flex> */}
-        <Flex display={{ base: "block", md: "none" }}>
+        <Flex
+          display={{ base: "block", md: "none" }}
+          mr={{ base: -2 }}
+        >
           <Button
             fontFamily={"heading"}
+            fontWeight={500}
             color={"#BF1F4A"}
+            fontSize="24px"
             _hover={{
               color: "#FFC726",
             }}
@@ -70,7 +75,7 @@ export default function Nav() {
               )
             }
           >
-            APPLY NOW
+            APPLY
           </Button>
         </Flex>
         <Spacer display={{ base: "none", md: "flex" }} />
@@ -82,32 +87,7 @@ export default function Nav() {
         >
           <DesktopNav />
         </Flex>
-        {/* <Flex
-          justify={{ base: "center" }}
-          display={{ base: "none", md: "block" }}
-        >
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"xl"}
-            fontWeight={500}
-            p={2}
-            fontFamily={"heading"}
-            color={"#BF1F4A"}
-            bg={"white"}
-            aria-label="Apply Now"
-            _hover={{
-              color: "#FFC726",
-            }}
-            onClick={() =>
-              window.open(
-                "https://www.maryknollschool.org/admission/apply-now",
-                "_blank"
-              )
-            }
-          >
-            APPLY NOW
-          </Button>
-        </Flex> */}
+
         <Spacer display={{ base: "none", md: "flex" }} />
       </Flex>
 
@@ -142,7 +122,7 @@ const DesktopNav = () => {
             )
           }
         >
-          APPLY NOW
+          APPLY
         </Link>
       </Box>
     </Stack>

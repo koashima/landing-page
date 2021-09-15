@@ -28,7 +28,7 @@ export default function Technology() {
             mt={12}
             color={"#551a29"}
             fontWeight={500}
-            fontSize={useBreakpointValue({ base: "xl", sm: "2xl", md: "4xl" })}
+            fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
           >
             FACILITIES & TECHNOLOGY
           </Heading>
@@ -36,7 +36,8 @@ export default function Technology() {
             color={"#551a29"}
             fontWeight={500}
             fontSize={useBreakpointValue({
-              base: "l",
+              base: "xs",
+              sm: "l",
               md: "xl",
             })}
           >
@@ -50,8 +51,8 @@ export default function Technology() {
             year-round events it hosts. From athletic games to school masses and
             assemblies, it is truly a hub of exciting activity.
           </Text>
-        </Stack>      <Spacer minHeight="50px" />
-
+        </Stack>{" "}
+        <Spacer minHeight="50px" />
       </VStack>
     </Flex>
   );

@@ -30,8 +30,8 @@ export default function Community() {
             my={50}
             color={"#551a29"}
             fontWeight={500}
-            fontSize={useBreakpointValue({ base: "xl", sm: "2xl", md: "4xl" })}
-          >
+            fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
+            >
             COMMUNITY/STUDENT BODY
           </Heading>
           <Spacer />
