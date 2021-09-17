@@ -37,48 +37,47 @@ export default function Faith() {
         direction="column"
         justify="center"
         align="stretch"
-        wrap={{base: "wrap"}}
+        wrap={{ base: "wrap" }}
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Image
+          src={"/million.svg"}
+          py={useBreakpointValue({ base: 2, md: 2 })}
+          width={useBreakpointValue({ base: "171px", md: "342px" })}
+          height={useBreakpointValue({ base: "124px", md: "248px" })}
+        />
+        <Image
           src={"/cross.svg"}
-          // objectFit="cover"
+          py={useBreakpointValue({ base: 2, md: 2 })}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
         <Image
           src={"/language.svg"}
-          // objectFit="cover"
-          width={useBreakpointValue({ base: "171px", md: "342px" })}
-          height={useBreakpointValue({ base: "124px", md: "248px" })}
-        />
-        <Image
-          src={"/million.svg"}
-          // objectFit="cover"
+          py={useBreakpointValue({ base: 2, md: 2 })}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
         <Image
           src={"/champions.svg"}
-          // objectFit="cover"
+          py={useBreakpointValue({ base: 2, md: 2 })}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
         <Image
           src={"/athlete.svg"}
-          // objectFit="cover"
+          py={useBreakpointValue({ base: 2, md: 2 })}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
         <Image
           src={"/graduation.svg"}
-          // objectFit="cover"
+          py={useBreakpointValue({ base: 2, md: 2 })}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
       </HStack>
-      <Spacer minHeight="50px"/>
-
+      <Spacer minHeight="50px" />
     </Flex>
   );
 }
