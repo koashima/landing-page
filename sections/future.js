@@ -23,7 +23,7 @@ export default function Future() {
         justify={"center"}
         px={useBreakpointValue({ base: 4, md: 24 })}
       >
-        <Image src={"/future1.svg"} objectFit="cover" mt="64" />
+        <Image src={"/future.svg"} objectFit="cover" mt="64" />
       </VStack>
     </Flex>
   );

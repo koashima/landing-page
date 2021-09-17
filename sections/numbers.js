@@ -41,7 +41,7 @@ export default function Faith() {
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Image
-          src={"/catholic.svg"}
+          src={"/cross.svg"}
           // objectFit="cover"
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
@@ -71,7 +71,7 @@ export default function Faith() {
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
         <Image
-          src={"/graduates.svg"}
+          src={"/graduation.svg"}
           // objectFit="cover"
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
