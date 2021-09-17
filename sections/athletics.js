@@ -13,8 +13,8 @@ export default function Athlectics() {
   return (
     <Flex
       id={"athletics"}
-      w={"full"}
-      h={"100vh"}
+      w={"100%"}
+      minHeight={"100vh"}
       backgroundImage={"url(/athletics.jpg)"}
       backgroundPosition={useBreakpointValue({
         base: "35%",

@@ -12,7 +12,7 @@ export default function Technology() {
   return (
     <Flex
       id="technology"
-      w={"full"}
+      w={"100%"}
       h={"100vh"}
       backgroundImage={"url(/facilities.jpg)"}
       backgroundSize={"cover"}

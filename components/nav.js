@@ -5,6 +5,7 @@ import {
   IconButton,
   Button,
   Stack,
+  Image,
   Collapse,
   Spacer,
   useColorModeValue,
@@ -26,7 +27,7 @@ export default function Nav() {
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
-        minH={"60px"}
+        minH={{base: "60px", }}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
@@ -39,44 +40,18 @@ export default function Nav() {
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
         >
+          <Image src={"/future.svg"} objectFit="contain" boxSize="xxxs" />
+        </Flex>
+        <Flex display={{ base: "block", md: "none" }} mr={{ base: -2 }}>
           <IconButton
             onClick={onToggle}
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }
             variant={"ghost"}
+            color={"#BF1F4A"}
             aria-label={"Toggle Navigation"}
           />
-        </Flex>
-        {/* <Flex
-          justify={{ base: "center" }}
-          display={{ base: "none", md: "block" }}
-        >
-          <Image src={Logo} width={93.75} height={116.875} />
-        </Flex> */}
-        <Flex
-          display={{ base: "block", md: "none" }}
-          mr={{ base: -2 }}
-        >
-          <Button
-            fontFamily={"heading"}
-            fontWeight={500}
-            color={"#BF1F4A"}
-            fontSize="24px"
-            _hover={{
-              color: "#FFC726",
-            }}
-            bg={"white"}
-            aria-label="Apply Now"
-            onClick={() =>
-              window.open(
-                "https://www.maryknollschool.org/admission/apply-now",
-                "_blank"
-              )
-            }
-          >
-            APPLY
-          </Button>
         </Flex>
         <Spacer display={{ base: "none", md: "flex" }} />
         <Flex
@@ -108,23 +83,6 @@ const DesktopNav = () => {
           </Link>
         </Box>
       ))}
-      <Box sx={styles.navLinks}>
-        <Link
-          style={{}}
-          aria-label="Apply Now"
-          _hover={{
-            color: "#FFC726",
-          }}
-          onClick={() =>
-            window.open(
-              "https://www.maryknollschool.org/admission/apply-now",
-              "_blank"
-            )
-          }
-        >
-          APPLY
-        </Link>
-      </Box>
     </Stack>
   );
 };

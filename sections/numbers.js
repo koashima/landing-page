@@ -15,6 +15,7 @@ export default function Faith() {
     <Flex
       id={"numbers"}
       mh={"100vh"}
+      w={"100%"}
       direction="column"
       align="center"
       justify="center"
@@ -41,23 +42,33 @@ export default function Faith() {
         px={useBreakpointValue({ base: 4, md: 8 })}
       >
         <Image
-          src={"/million.svg"}
-          py={useBreakpointValue({ base: 2, md: 2 })}
-          width={useBreakpointValue({ base: "171px", md: "342px" })}
-          height={useBreakpointValue({ base: "124px", md: "248px" })}
-        />
-        <Image
           src={"/cross.svg"}
           py={useBreakpointValue({ base: 2, md: 2 })}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
+          <Image
+            src={"/million.svg"}
+            py={useBreakpointValue({ base: 2, md: 2 })}
+            width={useBreakpointValue({ base: "171px", md: "342px" })}
+            height={useBreakpointValue({ base: "124px", md: "248px" })}
+          />
         <Image
           src={"/language.svg"}
           py={useBreakpointValue({ base: 2, md: 2 })}
           width={useBreakpointValue({ base: "171px", md: "342px" })}
           height={useBreakpointValue({ base: "124px", md: "248px" })}
         />
+      </HStack>
+
+      <HStack
+        w={"100%"}
+        direction="column"
+        justify="center"
+        align="stretch"
+        wrap={{ base: "wrap" }}
+        px={useBreakpointValue({ base: 4, md: 8 })}
+      >
         <Image
           src={"/champions.svg"}
           py={useBreakpointValue({ base: 2, md: 2 })}
@@ -81,10 +92,3 @@ export default function Faith() {
     </Flex>
   );
 }
-
-// align-items: center;
-// flex-direction: column;
-// width: 100vh;
-// flex-wrap: wrap;
-// align-content: center;
-// justify-content: space-evenly

@@ -10,7 +10,7 @@ import {
 
 export default function Academics() {
   return (
-    <Flex w={"100vw"} h={"100%"} direction="column">
+    <Flex w={"100%"} h={"100%"} direction="column">
       <Stack
         // maxW={"2xl"}
         zIndex={-1}
@@ -100,7 +100,7 @@ export default function Academics() {
           </Text>
           <Spacer />
         </Stack>
-        <Spacer minHeight="1200px"/>
+        <Spacer minHeight="1200px" />
       </Stack>
       <VStack
         w={"full"}

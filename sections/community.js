@@ -12,9 +12,9 @@ import {
 
 export default function Community() {
   return (
-    <Flex id="community" w={"full"} h={"100%"}>
+    <Flex id="community" w={"100%"} h={"100%"}>
       <VStack
-        w={"100vw"}
+        w={"100%"}
         flexDirection={{ base: "column-reverse", md: "row" }}
         justify={"center"}
         align="flex-end"
@@ -25,13 +25,17 @@ export default function Community() {
         </Stack>
         <Spacer />
 
-        <Stack maxW={"2xl"} align={{base: 'center', sm: "flex-end"}} spacing={6}>
+        <Stack
+          maxW={"2xl"}
+          align={{ base: "center", sm: "flex-end" }}
+          spacing={6}
+        >
           <Heading
             my={50}
             color={"#551a29"}
             fontWeight={500}
             fontSize={useBreakpointValue({ base: "xl", sm: "3xl", md: "4xl" })}
-            >
+          >
             COMMUNITY/STUDENT BODY
           </Heading>
           <Spacer />
@@ -56,7 +60,7 @@ export default function Community() {
             life changes, they are equipped with the skills to navigate and
             contribute to society.
           </Text>
-      <Spacer minHeight="50px" />
+          <Spacer minHeight="50px" />
         </Stack>
       </VStack>
     </Flex>

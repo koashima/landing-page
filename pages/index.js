@@ -7,6 +7,7 @@ import Community from "../sections/community";
 import Numbers from "../sections/numbers";
 import Athletics from "../sections/athletics";
 import Technology from "../sections/technology";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -28,19 +29,9 @@ export default function Home() {
         <Technology />
       </main>
 
-      {/* <footer>
-        <div>
-          made with love by
-          <a
-            href="https://liftedcreative.studio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            lifted
-          </a>
-        </div>
-      </footer> */}
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

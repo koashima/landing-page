@@ -13,14 +13,14 @@ export default function Faith() {
   return (
     <Flex
       id={"mission"}
-      w={"full"}
+      w={"100%"}
       h={"100%"}
       backgroundImage={"url(/faith.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
     >
       <VStack
-        w={"full"}
+        w={"100%"}
         justify={{ base: "space-around", md: "space-around" }}
         px={useBreakpointValue({ base: 4, md: 8 })}
       >

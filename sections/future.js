@@ -10,7 +10,7 @@ import {
 export default function Future() {
   return (
     <Flex
-      w={"full"}
+      w={"100%"}
       h={"100vh"}
       backgroundImage={"url(/cover.jpg)"}
       backgroundSize={"cover"}
